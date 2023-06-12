@@ -1,13 +1,13 @@
 const axios = require("axios")
-const OMDb_API_KEY = process.env.OMDb_API_KEY
+const VUE_APP_OMDB_API_KEY = process.env.VUE_APP_OMDB_API_KEY
 
 exports.handler = async function (event) {
   console.log(event);
   const payload = JSON.parse(event.body)
   const { title, type, year, page, id } = payload
   const url = id 
-    ? `https://www.omdbapi.com/?apikey=${OMDb_API_KEY}&i=${id}`
-    : `https://www.omdbapi.com/?apikey=${OMDb_API_KEY}&S=${title}&type=${type}&y=${year}&page=${page}`
+    ? `https://www.omdbapi.com/?apikey=${VUE_APP_OMDB_API_KEY}&i=${id}`
+    : `https://www.omdbapi.com/?apikey=${VUE_APP_OMDB_API_KEY}&S=${title}&type=${type}&y=${year}&page=${page}`
   
   try {
     const { data } =  await axios.get(url)

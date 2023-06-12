@@ -32,9 +32,6 @@ export default {
         message: '',
         loading: true
       })
-      //const { title, type, number, year } = payload;
-      //const OMDb_API_KEY = '7035C60C'
-      //const res = await axios.get(`https://www.omdbapi.com/?apikey=${OMDb_API_KEY}&S=${title}&type=${type}&y=${year}&page=1`);
       try {
         const res = await _fetchMovies({
           ...payload,
@@ -53,7 +50,6 @@ export default {
         if(pageLength > 1) {
           for (let page = 2; page<= pageLength; page+= 1) {
             if(page > (payload.number / 10)) break
-            //const res = await axios.get(`https://www.omdbapi.com/?apikey=${OMDb_API_KEY}&S=${title}&type=${type}&y=${year}&page=${page}`);
             const res = await _fetchMovies({
               ...payload,
               page
@@ -107,22 +103,4 @@ export default {
 
 async function _fetchMovies(payload) {
   return await axios.post('/.netlify/functions/movie', payload)
-  // const { title, type, year, page, id } = payload
-  // const OMDb_API_KEY = '7035C60C'
-  // const url = id 
-  //   ? `https://www.omdbapi.com/?apikey=${OMDb_API_KEY}&i=${id}`
-  //   : `https://www.omdbapi.com/?apikey=${OMDb_API_KEY}&S=${title}&type=${type}&y=${year}&page=${page}`
-  // return new Promise((resolve, reject) => {
-  //   axios.get(url)
-  //     .then(res => {
-  //       //console.log(res)
-  //       if(res.data.Error) {
-  //         reject(res.data.Error)
-  //       }
-  //       resolve(res)
-  //     })
-  //     .catch(err => {
-  //       reject(err.message)
-  //     })
-  // })
 }
