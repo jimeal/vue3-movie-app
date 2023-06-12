@@ -1,5 +1,5 @@
 const axios = require("axios")
-const { OMDb_API_KEY } = process.env
+const OMDb_API_KEY = process.env.OMDb_API_KEY
 
 exports.handler = async function (event) {
   console.log(event);
