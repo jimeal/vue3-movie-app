@@ -69,7 +69,6 @@
     width: 250px;
     height: 250px;
     margin: 40px auto 20px;
-    padding: 30px;
     border: 10px solid $gray-300;
     overflow: hidden;
     border-radius: 50%;

@@ -84,7 +84,7 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      padding: 6px;
+      padding: 3px;
       box-sizing: border-box;
       background-color: $gray-200;
       cursor: pointer;
@@ -99,6 +99,7 @@
       }
       img {
         width: 100%;
+        border-radius: 50%;
       }
     }
     @include media-breakpoint-down(sm) {
