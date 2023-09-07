@@ -21,4 +21,9 @@
   }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  html, body {
+    height: 100%;
+    background-color: #000;
+  }
+</style>

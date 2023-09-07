@@ -6,12 +6,12 @@
 
 <style lang="scss" scoped>
   .logo {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 20px;
-    color: $black;
+    color: $white;
     text-decoration: none;
     &:hover {
-      color: $black;
+      color: $white;
     }
     span {
       color: $primary;

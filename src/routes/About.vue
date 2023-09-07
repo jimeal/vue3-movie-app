@@ -66,9 +66,9 @@
   text-align: center;
   .photo {
     position: relative;
-    width: 250px;
-    height: 250px;
-    margin: 40px auto 20px;
+    width: 200px;
+    height: 200px;
+    margin: 14vh auto 40px;
     border: 10px solid $gray-300;
     overflow: hidden;
     border-radius: 50%;
@@ -82,6 +82,9 @@
     font-size: 40px;
     font-family: "Oswald", sans-serif;
     margin-bottom: 20px;
+  }
+  & > div {
+    color: #fff;
   }
 }
 </style>

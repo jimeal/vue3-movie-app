@@ -59,11 +59,9 @@
     methods: {
       isMatch(path) {
         if(!path) return false
-        console.log(this.$route)
         return path.test(this.$route.fullPath)
       },
       toAbout() {
-        console.log(123)
         this.$router.push('/about')
       }
     }
@@ -78,7 +76,7 @@
     display: flex;
     align-items: center;
     .logo {
-      margin-right: 40px;
+      margin-right: 90px;
     }
     .user {
       width: 40px;

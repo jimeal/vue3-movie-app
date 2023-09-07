@@ -20,8 +20,9 @@
 }
   h1 {
     line-height: 1;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 80px;
+    color: #fff;
     span {
       color: $primary;
     }

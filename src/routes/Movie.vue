@@ -169,7 +169,7 @@ import Loader from '~/components/Loader';
 }
 .movie-details {
   display: flex;
-  color: $gray-600;
+  color: $gray-400;
   .poster {
     width: 500px;
     height: 500px * 3 / 2;
@@ -183,7 +183,7 @@ import Loader from '~/components/Loader';
   .specs {
     flex-grow: 1;
     .title {
-      color: $black;
+      color: $white;
       font-family: 'Oswald', sans-serif;
       font-size: 70px;
       line-height: 1;
@@ -222,7 +222,7 @@ import Loader from '~/components/Loader';
     }
     h3 {
       margin: 24px 0 6px;
-      color: $black;
+      color: $white;
       font-family: "Oswald", sans-serif;
       font-size: 20px;
     }
